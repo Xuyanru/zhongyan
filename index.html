@@ -1,0 +1,470 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+		"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="css/owl.carouse-1.0.css">
+	<link rel="stylesheet" href="css/owl.theme.css">
+	<link rel="stylesheet" href="css/zy-style.css">
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js" language="JavaScript"></script>
+	<script type="text/javascript" src="js/owl.carousel.js" language="JavaScript"></script>
+	<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js" language="JavaScript"></script>
+	<title>首页</title>
+	<script>
+		$(function(){
+			$('.bn').owlCarousel({
+				items:1,
+				autoPlay:true,
+				// singleItem:true,
+				slideSpeed:10,
+				// rewindSpeed:10,
+				// paginationSpeed:10,
+				// mouseDrag:false
+			});
+			$('.app-os-ul').owlCarousel({
+				items:1,
+				pagination:false,
+				navigation:true,
+				navigationText:["<",">"],
+				mouseDrag:false,
+				rewindNav:false
+			});
+			$('.sml-nav').owlCarousel({
+				items:5,
+				pagination:false,
+				navigation:true,
+				navigationText:["<",">"],
+				mouseDrag:false,
+				rewindNav:false
+			});
+			$('.skb-ul').owlCarousel({
+				items:8,
+				pagination:false,
+				navigation:true,
+				navigationText:["<",">"],
+				mouseDrag:false,
+				rewindNav:false
+			});
+			$('.szg-ul').owlCarousel({
+				items:8,
+				pagination:false,
+				navigation:true,
+				navigationText:["<",">"],
+				mouseDrag:false,
+				rewindNav:false
+			});
+			$('.wzt').owlCarousel({
+				items:10,
+				pagination:false,
+				navigation:true,
+				navigationText:["<",">"],
+				mouseDrag:false,
+				rewindNav:false
+			});
+		})
+	</script>
+</head>
+<body>
+<div class="head-t">
+	<div class="h-t w">
+		<div class="h-tl fl"><span>企业管理部</span><a href="#">张三</a>欢迎您 <a href="#" class="h-t-msg">[10]</a> <span>2016年6月15日</span> <span>星期三</span> <span>下午 5:30</span></div>
+		<div class="h-tr fr"><a href="#" class="h-tr-btn h-tr-set"></a> <a href="#" class="h-tr-btn h-tr-user"></a> <a href="#" class="h-tr-sign">[注销]</a></div>
+		<div class="clear"></div>
+
+		<!----  导航设置  ---->
+		<script>
+			$(function(){
+				$('.h-tr-set').click(function(event){
+				 $('.h-sigin').toggle(); 
+                  event.stopPropagation();
+				})
+				 $("body").bind("click", function(){
+            $(".h-sigin").hide();
+            })
+			})
+		</script>
+		<div class="h-sigin">
+			<div class="hsg-ts"></div>
+			<ul>
+				<li class="hsg-l1"><a href="">用户密码设置</a></li>
+				<li class="hsg-l2"><a href="">ERP密码设置</a></li>
+				<li class="hsg-l3"><a href="">个性化设置</a></li>
+			</ul>
+		</div>
+		<!----   end  ---->
+
+	</div>
+</div>
+
+<div class="head w">
+	<div class="logo fl"><a href="#"><img src="images/logo.jpg"></a>企业门户系统</div>
+	<form class="h-search fr">
+		<select name="class">
+			<option value="volvo" selected="selected">新闻动态</option>
+			<option value="saab">行业资讯</option>
+			<option value="fiat">今日头条</option>
+		</select>
+		<input type="text" name="search" class="search" placeholder="请输入您要检索的内容">
+		<input type="button" value="搜 索" class="search-btn">
+	</form>
+	<div class="clear"></div>
+</div>
+
+<script>
+	$(document).ready(function(){
+		$('.s-unn').each(function() {
+			if( $(this).children().length > 7 ){
+				$(this).addClass('ofh');
+			}
+			else{
+				$(this).removeClass('ofh');
+			}
+		});
+		$('.s-unn').mouseover(function(){
+			$(window).unbind ('scroll');
+		});
+
+	})
+	//判断三级菜单子栏目超过7个(略小于banner高度时 使其超出隐藏 下滑显示)
+</script>
+<!--------  导航二级菜单 ------>
+<div class="nav-box">
+	<ul class="nav pr-ne w">
+		<li class="act nav-h1"><a href="#">门户首页</a>
+			<ul class="s-un">
+				<li class="sun-i"><a href="#">二级菜单</a>
+					<ul class="s-unn">
+						<li><a href="#">三级菜单</a></li>
+						<li><a href="#">三级菜单三级菜单三级菜单</a></li>
+						<li><a href="#">三级菜单三级菜单</a></li>
+						<li><a href="#">三级菜单</a></li>
+					</ul>
+				</li>
+				<li><a href="#">二级菜单</a></li>
+			</ul>
+		</li>
+		</li>
+		<li><a href="#">新闻动态</a>
+			<ul class="s-un">
+				<li><a href="#">二级菜单</a></li>
+				<li><a href="#">二级菜单</a></li>
+				<li class="sun-i"><a href="#">二级菜单</a>
+					<ul class="s-unn">
+						<li><a href="#">三级菜单</a></li>
+						<li><a href="#">三级菜单三级菜单三级菜单</a></li>
+						<li><a href="#">三级菜单三级菜单</a></li>
+						<li><a href="#">三级菜单</a></li>
+						<li><a href="#">三级菜单</a></li>
+						<li><a href="#">三级菜单三级菜单三级菜单</a></li>
+						<li><a href="#">三级菜单三级菜单</a></li>
+						<li><a href="#">三级菜单</a></li>
+						<li><a href="#">三级菜单</a></li>
+						<li><a href="#">三级菜单三级菜单三级菜单</a></li>
+						<li><a href="#">三级菜单三级菜单</a></li>
+						<li><a href="#">三级菜单</a></li>
+						<li><a href="#">三级菜单</a></li>
+						<li><a href="#">三级菜单三级菜单三级菜单</a></li>
+						<li><a href="#">三级菜单三级菜单</a></li>
+						<li><a href="#">三级菜单</a></li>
+						<li><a href="#">三级菜单</a></li>
+						<li><a href="#">三级菜单三级菜单三级菜单</a></li>
+						<li><a href="#">三级菜单三级菜单</a></li>
+						<li><a href="#">三级菜单</a></li><li><a href="#">三级菜单</a></li>
+						<li><a href="#">三级菜单三级菜单三级菜单</a></li>
+						<li><a href="#">三级菜单三级菜单</a></li>
+						<li><a href="#">三级菜单</a></li>
+						<li><a href="#">三级菜单</a></li>
+						<li><a href="#">三级菜单三级菜单三级菜单</a></li>
+						<li><a href="#">三级菜单三级菜单</a></li>
+						<li><a href="#">三级菜单</a></li>
+
+					</ul>
+				</li>
+				<li><a href="#">二级菜单</a>
+					<ul class="s-unn">
+						<li><a href="#">三级菜单</a></li>
+						<li><a href="#">三级菜单菜单</a></li>
+						<li><a href="#">三级菜单</a></li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+		<li><a href="#">通知公告</a></li>
+		<li><a href="#">经营动态</a></li>
+		<li><a href="#">专题工作</a></li>
+		<li><a href="#">应用系统</a></li>
+		<li><a href="#">数据看板</a></li>
+		<li><a href="#">制度标准</a></li>
+		<li><a href="#">综合管理</a></li>
+		<div class="clear"></div>
+	</ul>
+</div>
+<div class="bn">
+	<img src="images/banner1.jpg">
+	<img src="images/banner2.jpg">
+	<img src="images/banner3.jpg">
+
+</div>
+<div class="app-os w">
+	<h1>应用系统</h1>
+	<ul class="app-os-ul pr-ne">
+		<div><li class="a1"><a href="">协同办公平台</a></li>
+			<li class="a2"><a href="">资金监管系统</a></li>
+		
+		
+			<li class="a3"><a href="">营销管理系统</a></li>
+			<li class="a4"><a href="">企业资源计划</a></li>
+		
+		
+			<li class="a5"><a href="">生产制造执行系统</a></li>
+			<li class="a6"><a href="">物流综合管控平台</a></li>
+		
+		
+			<li class="a7"><a href="">三项工作管理平台</a></li>
+		</div>
+		<div>
+			<li class="a1"><a href="">多项目管理平台</a></li>
+		
+		
+			<li class="a2"><a href="">行业统一会计核算软件</a></li>
+			<li class="a3"><a href="">全面预算管理系统</a></li>
+		
+		
+			<li class="a4"><a href="">财务管理审计子系统</a></li>
+			<li class="a5"><a href="">档案管理系统</a></li>
+		
+		
+			<li class="a6"><a href="">行业生产经营决策管理</a></li>
+			<li class="a7"><a href="">数据分析平台</a></li>
+		</div>
+			
+			
+		
+	</ul>
+</div>
+<div class="s-m w">
+	<div class="s-m-l fl">
+		<h1>
+			<div class="n1 nn act">流程待办平台</div>
+			<a class="more" href="#">更多 &gt;</a>
+			<div class="clear"></div>
+		</h1>
+		<div class="sml-menu">
+			<span class="sml-m-l">我的代办</span>
+			<ul class="sml-nav pr-ne fl">
+				<li><div class="n-q db1 act"><a href="#"><span>2</span></a></div><span>代办公文</span></li>
+				<li><div class="n-q db2"><a href="#"></a></div><span>报销审批</span></li>
+				<li><div class="n-q db3"><a href="#"></a></div><span>待办事项</span></li>
+				<li><div class="n-q db4"><a href="#"></a></div><span>文件传阅</span></li>
+				<li><div class="n-q db5"><a href="#"></a></div><span>三项工作</span></li>
+				<li><div class="n-q db5"><a href="#"></a></div><span>三项工作</span></li>
+			</ul>
+			
+			<div class="clear"></div>
+			
+
+		</div>
+		<div class="sml-menu">
+			<span class="sml-m-l">我的发起</span>
+			<ul class="sml-nav pr-ne fl">
+				<li><div class="n-q fq1 act"><a href="#"><span>2</span></a></div><span>拟文</span></li>
+				<li><div class="n-q fq2"><a href="#"></a></div><span>用印审批</span></li>
+				<li><div class="n-q fq3"><a href="#"></a></div><span>办公用品</span></li>
+				<li><div class="n-q fq4"><a href="#"></a></div><span>就餐申请</span></li>
+				<li><div class="n-q fq5"><a href="#"></a></div><span>住宿申请</span></li>
+				<li><div class="n-q fq5"><a href="#"></a></div><span>住宿申请</span></li>
+			</ul>
+			<a href="" class="fr">更多></a>
+			<div class="clear"></div>
+		</div>
+		<div class="sml-menu">
+			<span class="sml-m-l">我的查询</span>
+			<ul class="sml-nav pr-ne fl">
+				<li><div class="n-q cx1 act"><a href="#"><span>2</span></a></div><span>已办公文</span></li>
+				<li><div class="n-q cx2"><a href="#"></a></div><span>已发公文</span></li>
+				<li><div class="n-q cx3"><a href="#"></a></div><span>已办事项</span></li>
+				<li><div class="n-q cx4"><a href="#"></a></div><span>已发事项</span></li>
+				<li><div class="n-q cx5"><a href="#"></a></div><span>传阅查询</span></li>
+				<li><div class="n-q cx5"><a href="#"></a></div><span>传阅查询</span></li>
+			</ul>
+			
+			<div class="clear"></div>
+		</div>
+	</div>
+	<div class="s-m-r sm-til fr">
+		<h1>通知公告 <a href="#" class="more">更多 ></a></h1>
+		<ul class="snr-gg">
+			<li class="act"><a href="#"> <i>[通知]</i>公司机关7-8月值班安排如下<span>05-20</span></a></li>
+			<li><a href="#"> <i>[通知]</i>公司机关7-8月值班安排如下<span>05-20</span></a></li>
+			<li><a href="#"> <i>[通知]</i>公司机关7-8月值班安排如下<span>05-20</span></a></li>
+			<li><a href="#"> <i>[通知]</i>公司机关7-8月值班安排如下<span>05-20</span></a></li>
+			<li><a href="#"> <i>[通知]</i>公司机关7-8月值班安排如下<span>05-20</span></a></li>
+			<li><a href="#"> <i>[通知]</i>公司机关7-8月值班安排如下<span>05-20</span></a></li>
+			<li><a href="#"> <i>[通知]</i>公司机关7-8月值班安排如下<span>05-20</span></a></li>
+			<li><a href="#"> <i>[通知]</i>公司机关7-8月值班安排如下<span>05-20</span></a></li>
+<a href="#">更多></a>
+	</div>
+		</ul>
+
+	<div class="clear"></div>
+</div>
+<script>
+	$(function(){
+		$('.n1').click(function(){$('.n2t').hide();$('.n3t').hide();$('.n1t').show();});
+		
+		$('.nn').click(function(){$('.nn').removeClass('act');$(this).addClass('act');});
+		$('.nt-lb').owlCarousel({items:1,autoPlay:true,pagination:false});
+		$('.nra').click(function(){$('.nra').removeClass('act');$(this).addClass('act');});
+		$('.nr1').click(function(){$('.zt1').show();$('.zt2').hide();});
+		$('.nr2').click(function(){$('.zt2').show();$('.zt1').hide();});
+		
+	})
+</script>
+<div class="s-n w">
+	<div class="s-n-l fl">
+		<h1>
+			<div class="n1 nn act">企业新闻</div>
+			
+			<a class="more" href="#">更多 ></a>
+			<div class="clear"></div>
+		</h1>
+		<div class="nt n1t">
+			<div class="nt-lb fl">
+				<div class="nt-lb-img"><img src="images/nt-lb-slt.jpg"><p>国家烟草专卖局副局长赵洪顺到陕西烟草调研时要求</p></div>
+				<div class="nt-lb-img"><img src="images/nt-lb-slt.jpg"><p>国家烟草专卖局副局长赵洪顺到陕西烟草调研时要求</p></div>
+				<div class="nt-lb-img"><img src="images/nt-lb-slt.jpg"><p>国家烟草专卖局副局长赵洪顺到陕西烟草调研时要求</p></div>
+			</div>
+			<ul class="nt-ul fr">
+				<li><a href="">奚柏龙在陕西中烟纪委书记座谈会议上强调<span>2016-05-20</span></a></li>
+				<li><a href="">奚柏龙在陕西中烟纪委书记座谈会议上强调<span>2016-05-20</span></a></li>
+				<li><a href="">奚柏龙在陕西中烟纪委书记座谈会议上强调<span>2016-05-20</span></a></li>
+				<li><a href="">奚柏龙在陕西中烟纪委书记座谈会议上强调<span>2016-05-20</span></a></li>
+				<li><a href="">奚柏龙在陕西中烟纪委书记座谈会议上强调<span>2016-05-20</span></a></li>
+				<li><a href="">奚柏龙在陕西中烟纪委书记座谈会议上强调<span>2016-05-20</span></a></li>
+				<li><a href="">奚柏龙在陕西中烟纪委书记座谈会议上强调<span>2016-05-20</span></a></li>
+			</ul>
+		</div>
+		
+		
+	</div>
+	<div class="s-n-r sm-til fr">
+		<h1>会议专题 <a class="nr1 act nra">会议资料</a><a class="nr2 nra">会议通知</a></h1>
+		<ul class="snr-gg snr-zt zt1">
+			<li class="act"><a href="#">公司机关7-8月值班安排..<span>05-20</span></a></li>
+			<li><a href="#">公司机关7-8月值班安排.公司机关7-8月值班安排..<span>05-20</span></a></li>
+			<li><a href="#">公司机关7-8月值班安排..<span>05-20</span></a></li>
+			<li><a href="#">公司机关7-8月值班安排公司机关7-8月值班安排...<span>05-20</span></a></li>
+			<li><a href="#">公司机关7-8月值班安排..<span>05-20</span></a></li>
+			<li><a href="#">公司机关7-8月值班安排公司机关7-8月值班安排...<span>05-20</span></a></li>
+			<li><a href="#">公司机关7-8月值班安排..<span>05-20</span></a></li>
+			<a href="#" class="more">更多 ></a>
+		</ul>
+		<ul class="snr-gg snr-zt zt2">
+			<li><a href="#">陕西中烟工业有限责任聘..<span>05-20</span></a></li>
+			<li><a href="#">陕西中烟工业有限责任聘..<span>05-20</span></a></li>
+			<li><a href="#">陕西中烟工业有限责任聘..<span>05-20</span></a></li>
+			<li><a href="#">陕西中烟工业有限责任聘..<span>05-20</span></a></li>
+			<li><a href="#">陕西中烟工业有限责任聘..<span>05-20</span></a></li>
+			<li><a href="#">陕西中烟工业有限责任聘..<span>05-20</span></a></li>
+			<li><a href="#">陕西中烟工业有限责任聘..<span>05-20</span></a></li>
+			<a href="#" class="more">更多 ></a>
+		</ul>
+	</div>
+	<div class="clear"></div>
+</div>
+<div class="s-kb sm-til w">
+	<h1>数据看板</h1>
+	<ul class="skb-ul pr-ne">
+		<li><div class="skb-img skb1"><a href="#"></a></div><p>区域市场分析</p></li>
+		<li><div class="skb-img skb2"><a href="#"></a></div><p>工业企业分析</p></li>
+		<li><div class="skb-img skb3"><a href="#"></a></div><p>产品结构分析</p></li>
+		<li><div class="skb-img skb4"><a href="#"></a></div><p>竞争品牌分析</p></li>
+		<li><div class="skb-img skb5"><a href="#"></a></div><p>低焦油趋势分析</p></li>
+		<li><div class="skb-img skb6"><a href="#"></a></div><p>细支趋势分析</p></li>
+		<li><div class="skb-img skb7"><a href="#"></a></div><p>存销比分析</p></li>
+		<li><div class="skb-img skb8"><a href="#"></a></div><p>月度财务快报</p></li>
+		<li><div class="skb-img skb8"><a href="#"></a></div><p>月度财务快报</p></li>
+	</ul>
+</div>
+<div class="s-dz w">
+	<ul>
+		<li>
+			<h1>经营动态</h1>
+			<div class="sdz-img"><a href="#"><img src="images/jy.jpg"></a></div>
+		</li>
+		<li>
+			<h1>指定标准</h1>
+			<div class="sdz-img"><a href="#"><img src="images/jy2.jpg"></a></div>
+		</li>
+		<li>
+			<h1>党建工作</h1>
+			<div class="sdz-img"><a href="#"><img src="images/jy3.jpg"></a></div>
+		</li>
+		<div class="clear"></div>
+	</ul>
+	<!-- <div class="sdz-l sm-til fl">
+		<h1>经营动态</h1>
+		<div class="sdz-img"><a href="#"><img src="images/sdz-l-slt.jpg"></a></div>
+	</div> -->
+
+	<!-- <div class="sdz-r sm-til fr">
+		<h1>重点工作</h1>
+		<div class="sdz-img"><a href="#"><img src="images/sdz-r-slt.jpg"></a></div>
+	</div> -->
+	<div class="clear"></div>
+</div>
+<div class="s-zg sm-til w">
+	<h1>综合管理</h1>
+	<ul class="szg-ul pr-ne">
+		<li><div class="szg-img zg1"><a href="#"></a></div><p>日程表</p></li>
+		<li><div class="szg-img zg2"><a href="#"></a></div><p>通讯录</p></li>
+		<li><div class="szg-img zg3"><a href="#"></a></div><p>我的邮件</p></li>
+		<li><div class="szg-img zg4"><a href="#"></a></div><p>文档管理</p></li>
+		<li><div class="szg-img zg5"><a href="#"></a></div><p>天气预报</p></li>
+		<li><div class="szg-img zg6"><a href="#"></a></div><p>培训材料</p></li>
+		<li><div class="szg-img zg9"><a href="#"></a></div><p>党风廉政</p></li>
+		<li><div class="szg-img zg10"><a href="#"></a></div><p>依法规范</p></li>
+		<li><div class="szg-img zg10"><a href="#"></a></div><p>依法规范</p></li>
+	</ul>
+</div>
+<div class="s-wz sm-til w">
+	<h1>行业网站</h1>
+	<div class="wzt1 wzt pr-ne">
+		<a href="#">国家局网站</a>
+		<a href="#">中国烟草杂志</a>
+		<a href="#">烟草科教网</a>
+		<a href="#">烟草学会网</a>
+		<a href="#">中烟电商网</a>
+		<a href="#">东方烟草报</a>
+		<a href="#">财务审计网</a>
+		<a href="#">烟草学会网</a>
+		<a href="#">烟草物资网</a>
+		<a href="#">中国烟机网</a>
+		<a href="#">中国烟机网</a>
+	</div>
+	
+</div>
+<div class="s-wz sm-til w">
+	<h1>常用网站</h1>
+	<div class="wzt1 wzt pr-ne">
+		<a href="#">国家局网站</a>
+		<a href="#">中国烟草杂志</a>
+		<a href="#">烟草科教网</a>
+		<a href="#">烟草学会网</a>
+		<a href="#">中烟电商网</a>
+		<a href="#">东方烟草报</a>
+		<a href="#">财务审计网</a>
+		<a href="#">烟草学会网</a>
+		<a href="#">烟草物资网</a>
+		<a href="#">中国烟机网</a>
+		<a href="#">中国烟机网</a>
+	</div>
+	
+</div>
+<div class="foot">
+	<p>版权所有：陕西中烟工业责任有限公司</p>
+	<p>技术服务：029-XXXXXXXX  |  后勤服务: 029-XXXXXXXX  |  邮件服务： 029-XXXXXXXX   |  <a href="#">公司外网</a></p>
+</div>
+</body>
+</html>
